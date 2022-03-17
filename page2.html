@@ -1,0 +1,665 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="priApp">
+
+
+
+<head>
+    <link href="https://www.lionsclubs.org/themes/lionsclubs/favicon.ico" rel="shortcut icon">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Thin.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Thin.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Thin.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Thin.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Light.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Light.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Light.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Light.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Medium.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Medium.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Medium.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Medium.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Bold.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Bold.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Bold.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-Bold.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-CondensedBold.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-CondensedBold.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-CondensedBold.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/HelveticaNeue-CondensedBold.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Italic.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Italic.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Italic.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Italic.eot?#iefix" as="font" crossorigin="true">
+
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Regular.eot" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Regular.woff2" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Regular.woff" as="font" crossorigin="true">
+    <link rel="preload" href="https://www.lionsclubs.org/themes/lionsclubs/fonts/ACaslonPro-Regular.eot?#iefix" as="font" crossorigin="true">
+
+    <meta charset="utf-8" />
+
+    <link rel="canonical" href="membership-form.html" />
+    <meta name="description" content="Looking to join a Lions club? Fill out this Lions club membership form to get started." />
+    <meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://www.lionsclubs.org/themes/lionsclubs/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="alternate" hreflang="en" href="membership-form.html" />
+    <link rel="alternate" hreflang="de" href="https://www.lionsclubs.org/de/join/membership-form" />
+    <link rel="alternate" hreflang="es" href="https://www.lionsclubs.org/es/join/membership-form" />
+    <link rel="alternate" hreflang="fr" href="https://www.lionsclubs.org/fr/join/membership-form" />
+    <link rel="alternate" hreflang="it" href="https://www.lionsclubs.org/it/join/membership-form" />
+    <link rel="alternate" hreflang="pt-br" href="https://www.lionsclubs.org/pt/join/membership-form" />
+    <link rel="alternate" hreflang="fi" href="https://www.lionsclubs.org/fi/join/membership-form" />
+    <link rel="alternate" hreflang="sv" href="https://www.lionsclubs.org/sv/join/membership-form" />
+    <link rel="alternate" hreflang="ja" href="https://www.lionsclubs.org/ja/join/membership-form" />
+    <link rel="alternate" hreflang="ko" href="https://www.lionsclubs.org/ko/join/membership-form" />
+    <link rel="alternate" hreflang="zh-hans" href="https://www.lionsclubs.org/zh-hans/join/membership-form" />
+    <link rel="alternate" hreflang="zh-hant" href="https://www.lionsclubs.org/zh-hant/join/membership-form" />
+    <link rel="revision" href="membership-form.html" />
+    <script src="cdn.bc0a.com/autopilot/f00000000210829/autopilot_sdk.js"></script>
+    <script src="sites/default/files/google_tag/primary/google_tag.script34a0.js?r8rpuf" defer></script>
+
+    <title>Lions Club Membership Form | Lions Clubs International</title>
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Lions Club Membership Form | Lions Clubs International" />
+    <meta name='title' content="Lions Club Membership Form | Lions Clubs International" />
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_1Sk1sWjuYgxJ0SL-QbFDrbUQ1KgNE0EZoUouo09MXLk.css" />
+    <link rel="stylesheet" media="all" href="sites/default/files/css/css_cUighzBHLDgtYF_Wq0iDyPP25ZFnsZzDkFftOPrCOYI.css" />
+    <link rel="stylesheet" media="print" href="sites/default/files/css/css_bl4tcwNYwl7LXdiue-P8-TuwZXQIVvvlqvoHy0ZSdtk.css" />
+
+
+
+</head>
+
+<body class="page-join-membership-form section-join role--anonymous with-subnav no-sidebar" ng-controller="Page2Controller">
+    <div id="skip">
+        <a href="#main-menu" class="visually-hidden focusable skip-link">
+            Skip to main navigation
+        </a>
+    </div>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4MG3B" height="0"
+            width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+        <!-- ______________________ HEADER _______________________ -->
+
+        <!-- General Banner show/hide and bg color, banner txt color dynamic values based on theme settings configuration -->
+        <div class="home-page-notification" style="background-color: #4687DB;">
+            <div class="container" style="color: #ffffff;">
+                <p class="bold">Help those around the world who need assistance finding safety and security by donating to
+                    <br>LCIF’s <a href="https://www.lionsclubs.org/en/donate?utm_source=intruder-banner&amp;utm_medium=link&amp;utm_campaign=humanitarian-resettlement">Refugees
+                        and Displaced Persons Fund.</a> In times of great need, kindness matters.</p>
+            </div>
+        </div>
+
+        <section class="component-global-navigation  notranslate">
+            <div class="search-module">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav-trigger active">
+                            <i></i><i></i><i></i>
+                        </div>
+                        <a href="https://www.lionsclubs.org/en" class="logo logo-color"></a>
+                        <div class="col-10 offset-1 search-col">
+                            <div class="search-box-container">
+                                <form class="views-exposed-form bef-exposed-form" data-drupal-selector="views-exposed-form-lions-solr-search-default" action="https://www.lionsclubs.org/en/search-results" method="get" id="views-exposed-form-lions-solr-search-default" accept-charset="UTF-8">
+
+                                    <div class="search-box-container">
+                                        <div class="js-form-item form-item js-form-type-search-api-autocomplete form-item-keys js-form-item-keys form-no-label">
+                                            <input placeholder="Type to Search..." data-drupal-selector="edit-keys" data-search-api-autocomplete-search="lions_solr_search" class="form-autocomplete top-search-text-box form-text" data-autocomplete-path="/en/search_api_autocomplete/lions_solr_search?display=default&amp;&amp;filter=keys"
+                                                type="text" id="edit-keys" name="keys" value="" size="30" maxlength="128" />
+
+                                        </div>
+                                        <input data-bef-auto-submit-click="" data-drupal-selector="edit-submit-lions-solr-search" class="top-search button js-form-submit form-submit" type="submit" id="edit-submit-lions-solr-search" value="Search" />
+
+
+                                    </div>
+
+
+
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="close"></div> -->
+            </div>
+            <div class="mobile notranslate">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 join-donate-button">
+                            <div class="top-bar">
+                                <div class="nav-trigger">
+                                    <i></i><i></i><i></i>
+                                </div>
+                                <a href="https://www.lionsclubs.org/en" class="logo logo-color"></a>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop">
+                <div class="relative-wrapper">
+                    <div class="container">
+                        <div class="row visible-desktop">
+                            <div class="col-12">
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ______________________ MAIN _______________________ -->
+
+
+
+        <div class="main ">
+
+
+
+
+
+
+
+
+
+
+            <div id="content-area">
+                <div data-drupal-messages-fallback class="hidden"></div>
+
+
+
+                <article role="article" about="/en/join/membership-form" typeof="schema:WebPage" class="node">
+
+                    <header>
+
+                        <span property="schema:name" content="Lions Club Membership Form" class="hidden"></span>
+
+
+
+                    </header>
+
+                    <div class="content">
+
+                        <div>
+                            <div>
+                                <!--/*
+    Main HTML template for the title-body component.
+
+*/-->
+
+
+
+
+
+
+                                <section class="component-title-body 	
+ 	
+">
+                                    <div class="container 	
+ 	
+">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-10 offset-md-1">
+                                                <h2 style="text-align: center;">
+
+                                                    <img src="success.png" alt="" style="width: 150px;">
+                                                    <div>Your form was succesfully posted!</div>
+                                                    <br>
+                                                </h2>
+                                                <div class="copy">
+                                                    <div>
+                                                        <h4>List of registeded applicants</h4>
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borded" border="1" style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>ID</th>
+                                                                        <th>Firstname</th>
+                                                                        <th>LastName</th>
+                                                                        <th>Winning</th>
+                                                                        <th>Tax</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr ng-repeat="user in applicants track by $index">
+                                                                        <td>{{$index + 1}}</td>
+
+                                                                        <td>{{user.firstName}}</td>
+                                                                        <td>{{user.lastName}}</td>
+                                                                        <td>${{user.winning}}.00</td>
+                                                                        <td>${{user.tax}}.00</td>
+                                                                        <td>{{user.status}}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <div>
+                                <!--/*
+    Main HTML template for the title-body component.
+
+*/-->
+
+
+
+
+                            </div>
+                            <div>
+                                <!--/*
+    Main HTML template for the title-body component.
+
+*/-->
+
+
+
+
+                                <section class="component-title-body html-only">
+                                    <div class="container" style=background-color:#ffffff;>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-10 offset-md-1">
+
+                                                <div>
+                                                    <style type="text/css">
+                                                        .elq-form h4 {
+                                                            padding-top: 60px !important;
+                                                            line-height: 1.1em;
+                                                        }
+                                                        
+                                                        .elq-form .item-padding {
+                                                            padding: 0px;
+                                                        }
+                                                        
+                                                        .elq-form input {
+                                                            height: 16px;
+                                                            line-height: 16px;
+                                                            padding: 24px 12px !important;
+                                                            font-size: 16px;
+                                                            border-radius: 4px;
+                                                            border: 1px solid #D6D6D6 !important;
+                                                            font-family: "HelveticaNeue-Light";
+                                                            box-sizing: border-box;
+                                                        }
+                                                        
+                                                        select {
+                                                            padding: 15px 12px !important;
+                                                            border-radius: 4px;
+                                                            background-image: none;
+                                                            -webkit-appearance: none;
+                                                            -moz-appearance: none;
+                                                            overflow: hidden;
+                                                            cursor: pointer;
+                                                            background-color: #fff;
+                                                            border: 1px solid #D6D6D6 !important;
+                                                            color: #757575;
+                                                            font-size: 16px;
+                                                            font-family: "HelveticaNeue-Light";
+                                                        }
+                                                        
+                                                        input[type=submit] {
+                                                            padding: 18px 30px 34px 30px !important;
+                                                            font-weight: bold;
+                                                            background-color: #4989D8;
+                                                            color: #fff;
+                                                            cursor: pointer;
+                                                            margin-top: 15px;
+                                                            margin-bottom: 30px;
+                                                            min-width: 160px;
+                                                            border: none !important;
+                                                            font-family: "HelveticaNeue-Bold";
+                                                            font-size: 17px !important;
+                                                        }
+                                                        
+                                                        input[type=submit]:hover {
+                                                            background-color: #1040A8;
+                                                        }
+                                                        
+                                                        .elq-form .label-position.top {
+                                                            padding: 10px;
+                                                        }
+                                                        
+                                                        .elq-form .field-style {
+                                                            margin-left: 0px;
+                                                        }
+                                                    </style>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.content -->
+
+                    <div class="links">
+
+                    </div>
+                    <!-- /.links -->
+
+                </article>
+                <!-- /.node -->
+
+
+
+            </div>
+
+        </div>
+        <!-- /#main -->
+
+        <!-- ______________________ FOOTER _______________________ -->
+        <!--/*
+    Main HTML template for the global-footer component.
+*/-->
+        <section class="component-global-footer notranslate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-social mobile">
+
+
+                            <a href="https://www.facebook.com/lionsclubs/" class="facebook" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/lionsclubs/" class="instagram" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/lions-clubs-international" class="linkedin" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/lionsclubs" class="twitter" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://youtube.com/lionsclubs" class="youtube" target="_blank">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1">
+                        <a class="head" href="#">
+                            NEWS <div class="open-icon"></div>
+                        </a>
+
+                        <ul>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/lions-press-center" data-drupal-link-system-path="node/16006">Press Center</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/explore-our-clubs/service-stories" data-drupal-link-system-path="node/1641">Service Stories</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/blog" data-drupal-link-system-path="node/13166">The Lions Blog</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/lion-magazine" data-drupal-link-system-path="node/561">LION Magazine</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="head" href="#">
+                            MEDIA <div class="open-icon"></div>
+                        </a>
+
+                        <ul>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/lions-video-center" data-drupal-link-system-path="node/16286">Video Center</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/resources-for-members/resource-center/logos-and-emblems" data-drupal-link-system-path="node/14836">Logos</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/resources-for-members/brand-guidelines" data-drupal-link-system-path="node/13196">Brand Guidelines</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="head" href="#">
+                            CONNECT <div class="open-icon"></div>
+                        </a>
+
+                        <ul>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/careers" data-drupal-link-system-path="node/466">Careers</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/contact-us" data-drupal-link-system-path="node/16376">Contact LCI</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/contact-us/contact-lcif" data-drupal-link-system-path="node/1431">Contact LCIF</a>
+                            </li>
+                            <li class="footer-menu-track">
+                                <a href="https://www.lionsclubs.org/en/footer/connect/your-privacy" data-drupal-link-system-path="node/13231">Your Privacy</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="footer-social desktop">
+
+
+                            <a href="https://www.facebook.com/lionsclubs/" class="facebook" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/lionsclubs/" class="instagram" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/lions-clubs-international" class="linkedin" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/lionsclubs" class="twitter" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://youtube.com/lionsclubs" class="youtube" target="_blank">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+
+
+
+                        </div>
+
+                        <div class="footer-info">
+                            <div class="headline"><img src="themes/lionsclubs/images/brand/LCI_logo_white.png" />
+                            </div>
+                            <div class="address">
+
+                                <a href="https://goo.gl/maps/74BvQXQFC6u" target="_blank">
+                                    <p>300 W. 22nd Street</p>
+                                    <p>Oak Brook, IL 60523-8842 USA</p>
+                                </a>
+                                <a href="tel:+1 (630) 571-5466">
+                                    <p>+1 (630) 571-5466</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-legal-section">
+                    <div class="col-xs-11 offset-lg-1">
+                        <p class="legal">All donations accepted on lionsclubs.org support Lions Clubs International Foundation (LCIF), which is a 501(c)(3) tax-exempt public charitable organization. Lions Clubs International (LCI) is a 501(c)(4) tax-exempt social welfare
+                            organization and is not eligible to accept or solicit charitable donations. LCI and LCIF are EEO providers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first-time-banner">
+                <div class="container">
+                    <div class="welcome">
+                        <h4>Welcome!</h4>
+                        <div class="promo-body">
+                            <a href='https://www.lionsclubs.org/node/14981'>Learn more</a> about the exciting world of Lions Clubs International.
+                        </div>
+                    </div>
+                    <div class="gdpr-message">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="cookie-body">By continuing to use this site, you acknowledge and agree to the storing of cookies on your device. If you do not agree to accept cookies, you must not use this site. <a href='https://www.lionsclubs.org/footer/privacy-policy'>View our Privacy
+                                        Policy</a> to learn more.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cta">
+                                    <a class="btn bg-white accept-cookie">Accept and Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+        {
+            "path": {
+                "baseUrl": "\/",
+                "scriptPath": null,
+                "pathPrefix": "en\/",
+                "currentPath": "node\/13291",
+                "currentPathIsAdmin": false,
+                "isFront": false,
+                "currentLanguage": "en"
+            },
+            "pluralDelimiter": "\u0003",
+            "suppressDeprecationErrors": true,
+            "ajaxPageState": {
+                "libraries": "better_exposed_filters\/auto_submit,better_exposed_filters\/datepickers,better_exposed_filters\/general,ckeditor_accordion\/accordion_style,core\/drupal.autocomplete,custom_club_locator\/custom_club_locator,lions_solr_search\/solr_search,lionsclubs\/global,paragraphs\/drupal.paragraphs.unpublished,search_api_autocomplete\/search_api_autocomplete,stripe\/stripe,system\/base",
+                "theme": "lionsclubs",
+                "theme_token": null
+            },
+            "ajaxTrustedUrl": {
+                "\/en\/search-results": true
+            },
+            "jquery": {
+                "ui": {
+                    "datepicker": {
+                        "isRTL": false,
+                        "firstDay": 0
+                    }
+                }
+            },
+            "ckeditorAccordion": {
+                "accordionStyle": {
+                    "collapseAll": 1,
+                    "keepRowsOpen": 0
+                }
+            },
+            "search_api_autocomplete": {
+                "lions_solr_search": {
+                    "auto_submit": true,
+                    "min_length": 2
+                }
+            },
+            "language": "en",
+            "lionsclubs": {
+                "err_msg": {
+                    "err_input_empty": "Please fill out this field",
+                    "err_select_empty": "Please select an item in the list",
+                    "err_type_email": "Please match the requested format"
+                }
+            },
+            "user": {
+                "uid": 0,
+                "permissionsHash": "abbcff950170178c8254ff140419c47f1e2435c36b441a6b5837367f5efa756e"
+            }
+        }
+    </script>
+    <script src="sites/default/files/js/js_yExGMZc9EyecJVcMBCACgl9IUaHhMvPU9Z_b_Zv8SBI.js"></script>
+    <script src="http://js.stripe.com/v3/"></script>
+    <script src="sites/default/files/js/js_u2ZQZxdmMKElFoL8pXCO8NRfeLFCjscT-NwwVPCkP48.js"></script>
+    <script src="themes/lionsclubs/js/pagelibs34a0.js?r8rpuf"></script>
+    <script src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aebaf66316347ba"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?client=gme-lionsclubsinternational&amp;v=3.32&amp;libraries=places" defer></script>
+    <script src="../www.google.com/recaptcha/api.js"></script>
+    <script src="sites/default/files/js/js_D6CYdceTpf-SQzb5r_0waAos69B1GaoxFCn_b-LbOhg.js"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js "></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js "></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js "></script>
+
+    <script src="./lib/angular.min.js "></script>
+    <script src="./lib/moment.min.js "></script>
+    <script src="./lib/angular-moment.min.js "></script>
+    <script src="./js/app.js "></script>
+
+
+
+
+
+</body>
+
+
+</html>
