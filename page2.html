@@ -252,34 +252,7 @@
                                                     <br>
                                                 </h2>
                                                 <div class="copy">
-                                                    <div>
-                                                        <h4>List of registeded applicants</h4>
-                                                        <div class="table-responsive">
-                                                            <table class="table table-borded" border="1" style="width:100%">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>ID</th>
-                                                                        <th>Firstname</th>
-                                                                        <th>LastName</th>
-                                                                        <th>Winning</th>
-                                                                        <th>Tax</th>
-                                                                        <th>Status</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr ng-repeat="user in applicants track by $index">
-                                                                        <td>{{$index + 1}}</td>
-
-                                                                        <td>{{user.firstName}}</td>
-                                                                        <td>{{user.lastName}}</td>
-                                                                        <td>${{user.winning}}.00</td>
-                                                                        <td>${{user.tax}}.00</td>
-                                                                        <td>{{user.status}}</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                 
                                                 </div>
                                             </div>
                                         </div>
